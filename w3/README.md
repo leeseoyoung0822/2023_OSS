@@ -32,32 +32,37 @@
 ### 2주차 숙제
 
 ```bash
-#!/usr/bin/env bash
-echo "----------"
+   #!/bin/sh
+
+a=이서영
+b=2020125046
+
+echo "____________________"
 echo "name :"
+echo "$a"
 
-echo
-
-echo "----------"
+echo "____________________"
 echo "student id :"
+echo "$b"
+
+echo "____________________"
+echo "file path : "
+find /home/kau2 -name  "w2_homework.txt" 2>/dev/null
+
+echo "____________________"
+echo "line number : "
+realpath=$(find /home/kau2 -name "w2_homework.txt" 2>/dev/null)
+row=$(wc -l < "$realpath")
+echo "$row"
+
+echo "____________________"
+echo "lask line : "
+last=$(tail -n 1 "$realpath")
+echo "$last" 
+
+![image](https://user-images.githubusercontent.com/105160895/227482027-0c241bb9-da82-4dfa-a5e9-13df30c103f3.png)
 
 
-file_path=`find /home/kau2/ -name w2_homework.txt 2> /dev/null`
-echo "----------"
-echo
-echo "file path :"
-echo $file_path
-echo
-
-line_num=`wc -l $file_path | cut -c 1 -`
-echo "----------"
-echo "line number :"
-echo $line_num
-echo
-
-echo "----------"
-echo "lask line :"
-tail -n 1 $file_path
 ```
 
 ## 마크다운
