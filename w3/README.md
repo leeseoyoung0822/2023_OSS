@@ -32,7 +32,7 @@
 ### 2주차 숙제
 
 ```bash
-   #!/bin/sh
+#!/bin/sh
 
 a=이서영
 b=2020125046
@@ -59,9 +59,6 @@ echo "____________________"
 echo "lask line : "
 last=$(tail -n 1 "$realpath")
 echo "$last" 
-
-![image](https://user-images.githubusercontent.com/105160895/227482027-0c241bb9-da82-4dfa-a5e9-13df30c103f3.png)
-
 
 ```
 
