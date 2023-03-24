@@ -19,13 +19,13 @@
 ##### 주요 git 명령어
 * add : 파일을 추적 대상으로 포함시킬 때, 또는 커밋 대상으로 포함시킬 때 사용
     * 예) git add <file name>
-* commit
+* commit : 커밋 생성
 * git reset HEAD <file> : stage된 파일을 unstaged로 변경
 * git checkout -- <file> : stage되어 있는 파일을 수정한 후 수정 전으로 되돌림 
-* branch
-* merge
-* status
-* log
+* branch : 브랜치 생성
+* merge : 현재 브랜치를 다른 브랜치에 머지
+* status : 현재 상태 확인
+* log : 이력 
     * 예) git log --oneline --decorate --graph --all
 
 ------
